@@ -1,0 +1,71 @@
+{
+  "hero": {
+    "title": "Solar Real",
+    "subtitle": "Discover the magic of Solar Real, a 19th-century colonial mansion offering breathtaking views of Rio de Janeiro."
+  },
+  "buffetDecor": {
+    "title": "Buffet & Decor",
+    "subtitle": "That you will remember forever"
+  },
+  "about": {
+    "title": "About Us",
+    "name": "Leco Biagioni",
+    "role": "Wedding Planner",
+    "description": "Our advisory and ceremonial team, led by Leco Biagioni, is here to turn your wedding into a unique and unforgettable experience. With years of expertise and a keen eye for detail, we ensure every moment is perfect. Leco Biagioni works with the best vendors in the market, and couples will count on his guidance from start to finish.",
+    "cta": "Contact Us"
+  },
+  "packages": {
+    "title": "All-Inclusive Packages",
+    "subtitle": "Our proposal includes all the essential pillars for a successful wedding:",
+    "items": {
+      "assessoria": {
+        "title": "Planning & Coordination",
+        "description": "Experienced professionals to ensure everything goes as planned."
+      },
+      "local": {
+        "title": "Venue & Photography & Videography",
+        "description": "Solar Real with generator, cleaning, and security, plus professionals to capture every magical moment."
+      },
+      "buffet": {
+        "title": "Buffet & Sweets",
+        "description": "Appetizer tables, cocktail bites, mini portions, and sweets to delight your guests on your big day."
+      },
+      "bar": {
+        "title": "Open Bar",
+        "description": "Varied imported drinks to refresh this unique moment."
+      },
+      "decor": {
+        "title": "Complete Decoration",
+        "description": "We transform the space into the setting of your dreams."
+      },
+      "dj": {
+        "title": "DJ & Sound & Light Setup",
+        "description": "Perfect music and lighting to energize your party."
+      }
+    }
+  },
+  "investment": {
+    "title": "Investment:",
+    "price": "Starting at R$ 180,000.00*",
+    "note": "*This value is based on 100 guests and may vary depending on the customization for each couple."
+  },
+  "form": {
+    "title": "We take care of every detail",
+    "subtitle": "Let our team of specialists handle all the details so you can enjoy every moment alongside your friends and family. Contact us and let's start planning the wedding of your dreams!",
+    "contact": "Contact Information",
+    "fields": {
+      "name": "Name",
+      "email": "Email",
+      "phone": "Phone",
+      "event": "Select event type",
+      "wedding": "Wedding",
+      "anniversary": "Anniversary",
+      "baptism": "Baptism",
+      "message": "Leave any message that may help us better understand your needs!"
+    },
+    "button": "Send"
+  },
+  "footer": {
+    "rights": "2025 - All rights reserved"
+  }
+}

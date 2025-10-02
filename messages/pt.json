@@ -1,0 +1,71 @@
+{
+  "hero": {
+    "title": "Solar Real",
+    "subtitle": "Descubra a magia do Solar Real, uma mansão colonial do século XIX que oferece vistas deslumbrantes do Rio de Janeiro."
+  },
+  "buffetDecor": {
+    "title": "Buffet & Decor",
+    "subtitle": "Que você se lembrará para sempre"
+  },
+  "about": {
+    "title": "Quem Somos",
+    "name": "Leco Biagioni",
+    "role": "Wedding Planner",
+    "description": "Nossa equipe de assessoria e cerimonial, liderada por Leco Biagioni, está aqui para transformar seu casamento em uma experiência única e inesquecível. Com anos de experiência e um olhar atento aos detalhes, garantimos que cada momento seja perfeito. Leco Biagioni trabalha com os melhores fornecedores do mercado, e os noivos contarão com sua assessoria do início ao fim.",
+    "cta": "Fale Conosco"
+  },
+  "packages": {
+    "title": "Pacotes All-Inclusive",
+    "subtitle": "Nossa proposta inclui todos os pilares essenciais para um casamento de sucesso:",
+    "items": {
+      "assessoria": {
+        "title": "Assessoria & Cerimonial",
+        "description": "Profissionais experientes para garantir que tudo ocorra conforme o planejado."
+      },
+      "local": {
+        "title": "Local & Foto & Filmagem",
+        "description": "Solar Real com gerador, limpeza e segurança e profissionais para capturar cada momento mágico."
+      },
+      "buffet": {
+        "title": "Buffet & Doces",
+        "description": "Mesa de antepastos, coquetel volante e mini porções, além de doces para deliciar seus convidados e seu grande dia."
+      },
+      "bar": {
+        "title": "Open Bar",
+        "description": "Drinks variados importados para refrescar esse momento único."
+      },
+      "decor": {
+        "title": "Decoração Completa",
+        "description": "Transformamos o espaço no cenário dos seus sonhos."
+      },
+      "dj": {
+        "title": "DJ & Estrutura de Som & Luz",
+        "description": "Músicas e iluminação perfeitas para animar a sua festa."
+      }
+    }
+  },
+  "investment": {
+    "title": "Investimento:",
+    "price": "À partir de R$ 180.000,00*",
+    "note": "*Este valor é baseado em 100 convidados e pode sofrer alteração para mais ou para menos dependendo da personalização que será feita para cada casal."
+  },
+  "form": {
+    "title": "Nós cuidamos de todos os detalhes",
+    "subtitle": "Deixe que a nossa equipe de especialistas cuide de todos os detalhes para que você possa aproveitar cada momento ao lado dos seus amigos e familiares. Entre em contato conosco e vamos começar a planejar o casamento dos seus sonhos!",
+    "contact": "Informações de Contato",
+    "fields": {
+      "name": "Nome",
+      "email": "Email",
+      "phone": "Celular",
+      "event": "Selecione o tipo de evento",
+      "wedding": "Casamento",
+      "anniversary": "Aniversário",
+      "baptism": "Batizado",
+      "message": "Deixe qualquer mensagem que possa nos ajudar a entender melhor!"
+    },
+    "button": "Enviar"
+  },
+  "footer": {
+    "rights": "2025 - Todos os direitos reservados"
+  }
+}
