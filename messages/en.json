@@ -3,9 +3,21 @@
     "title": "Solar Real",
     "subtitle": "Discover the magic of Solar Real, a 19th-century colonial mansion offering breathtaking views of Rio de Janeiro."
   },
-  "buffetDecor": {
+  "buffet": {
     "title": "Buffet & Decor",
-    "subtitle": "That you will remember forever"
+    "subtitle": "That you’ll remember forever"
+  },
+  "solar": {
+    "title": "Solar Real",
+    "subtitle": "A Colonial Mansion with Cinematic Views of Rio",
+    "card": {
+      "title": "Cinematic Views",
+      "place": "Solar Real",
+      "paragraph1": "Discover the magic of Solar Real, a 19th-century colonial mansion offering breathtaking views of Rio de Janeiro. Located in one of the city’s most traditional neighborhoods, this historic property is the perfect venue for an unforgettable celebration.",
+      "paragraph2": "The views of Rio de Janeiro from Solar Real are truly cinematic. Imagine being surrounded by the city’s natural beauty while enjoying every moment of your event.",
+      "paragraph3": "A Party That Feels Like Home!",
+      "paragraph4": "With its colonial architecture and welcoming atmosphere, Solar Real makes you and your guests feel at home. It’s the ideal place for hosting an intimate and sophisticated event, with every detail you desire."
+    }
   },
   "about": {
     "title": "About Us",
@@ -63,7 +75,12 @@
       "baptism": "Baptism",
       "message": "Leave any message that may help us better understand your needs!"
     },
-    "button": "Send"
+    "button": "Send",
+    "status": {
+      "missingFields": "Please fill in your name, email, and event type.",
+      "success": "Message sent successfully!",
+      "error": "Error sending message. Please try again later."
+    }
   },
   "footer": {
     "rights": "2025 - All rights reserved"

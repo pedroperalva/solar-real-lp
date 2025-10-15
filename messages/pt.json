@@ -3,9 +3,21 @@
     "title": "Solar Real",
     "subtitle": "Descubra a magia do Solar Real, uma mansão colonial do século XIX que oferece vistas deslumbrantes do Rio de Janeiro."
   },
-  "buffetDecor": {
+  "buffet": {
     "title": "Buffet & Decor",
     "subtitle": "Que você se lembrará para sempre"
+  },
+  "solar": {
+    "title": "Solar Real",
+    "subtitle": "Uma Mansão Colonial com Vistas Cinematográficas do Rio",
+    "card": {
+      "title": "Vistas Cinematográficas",
+      "place": "Solar Real",
+      "paragraph1": "Descubra a magia do Solar Real, uma mansão colonial do século XIX que oferece vistas deslumbrantes do Rio de Janeiro. Localizada em um dos bairros mais tradicionais da cidade, essa propriedade histórica é o local perfeito para realizar uma festa inesquecível.",
+      "paragraph2": "As vistas do Rio de Janeiro a partir do Solar Real são verdadeiramente cinematográficas. Imagine-se cercado pela beleza natural da cidade, com a oportunidade de aproveitar ao máximo a sua festa.",
+      "paragraph3": "Uma Festa como se fosse na Sua Casa!",
+      "paragraph4": "Com sua arquitetura colonial e atmosfera acolhedora, o Solar Real permite que você e seus convidados se sintam em casa. É o local perfeito para realizar uma festa íntima e sofisticada, com todos os detalhes que você deseja."
+    }
   },
   "about": {
     "title": "Quem Somos",
@@ -63,7 +75,12 @@
       "baptism": "Batizado",
       "message": "Deixe qualquer mensagem que possa nos ajudar a entender melhor!"
     },
-    "button": "Enviar"
+    "button": "Enviar",
+    "status": {
+      "missingFields": "Por favor, preencha nome, email e tipo de evento.",
+      "success": "Mensagem enviada com sucesso!",
+      "error": "Erro ao enviar. Tente novamente mais tarde."
+    }
   },
   "footer": {
     "rights": "2025 - Todos os direitos reservados"
