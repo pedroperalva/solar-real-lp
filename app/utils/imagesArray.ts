@@ -1,6 +1,4 @@
-const BASE =
-  process.env.NEXT_PUBLIC_LIFE_URL ||
-  "https://lifecampogrande.com.br/testes/wp-content/uploads/2025/08";
+const BASE = process.env.NEXT_PUBLIC_LIFE_URL;
 
 export const imagesArray1 = [
   `${BASE}/Casamento-Daiana-e-Lucas_0328-scaled.jpg`,
