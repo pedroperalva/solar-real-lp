@@ -120,10 +120,7 @@ export default function Home() {
       <section id="hero">
         <div className="hero-img-wrap">
           <img
-            src={`${
-              process.env.NEXT_PUBLIC_NEXT_PUBLIC_SUPABASE_URL ||
-              process.env.NEXT_PUBLIC_SUPABASE_URL
-            }/storage/v1/object/public/imagens-site-leco/LPs/Solar%20Real/bann.png`}
+            src={`${process.env.NEXT_PUBLIC_SUPABASE_URL}LPs/Solar%20Real/bann.png`}
             alt="hero banner"
           />
         </div>
@@ -439,10 +436,7 @@ export default function Home() {
       {/* FOOTER */}
       <footer className="bg-[#424242] min-h-[170px] w-full flex flex-col lg:flex-row items-center justify-around gap-4 px-12 py-6">
         <img
-          src={`${
-            process.env.NEXT_PUBLIC_NEXT_PUBLIC_SUPABASE_URL ||
-            process.env.NEXT_PUBLIC_SUPABASE_URL
-          }/storage/v1/object/public/imagens-site-leco/logos/marca-1-cor-fundo-escuro.png`}
+          src={`${process.env.NEXT_PUBLIC_SUPABASE_URL}logos/marca-1-cor-fundo-escuro.png`}
           alt="logo"
           className="w-[300px]"
         />
