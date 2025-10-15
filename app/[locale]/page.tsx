@@ -120,7 +120,7 @@ export default function Home() {
       <section id="hero">
         <div className="hero-img-wrap">
           <img
-            src={`${process.env.NEXT_PUBLIC_SUPABASE_URL}LPs/Solar%20Real/bann.png`}
+            src={`${process.env.NEXT_PUBLIC_SUPABASE_URL}/LPs/Solar%20Real/bann.png`}
             alt="hero banner"
           />
         </div>
@@ -192,9 +192,7 @@ export default function Home() {
                 preload="auto"
               >
                 <source
-                  src={`${
-                    process.env.NEXT_PUBLIC_LIFE_URL || process.env.LIFE_URL
-                  }/IMG_4191.mp4`}
+                  src={`${process.env.NEXT_PUBLIC_LIFE_URL}/IMG_4191.mp4`}
                   type="video/mp4"
                 />
                 Seu navegador não suporta vídeo.
@@ -261,9 +259,7 @@ export default function Home() {
         <div className="max-w-[1048px] w-full bg-white rounded-lg shadow-md grid grid-cols-1 md:grid-cols-2 gap-6">
           <div className="w-full flex justify-center">
             <img
-              src={`${
-                process.env.NEXT_PUBLIC_LIFE_URL || process.env.LIFE_URL
-              }/Casamento-Daiana-e-Lucas_1051-scaled.jpg`}
+              src={`${process.env.NEXT_PUBLIC_LIFE_URL}/Casamento-Daiana-e-Lucas_1051-scaled.jpg`}
               alt="Casamento no Solar Real"
               className="w-full h-auto object-cover rounded-lg"
             />
@@ -436,7 +432,7 @@ export default function Home() {
       {/* FOOTER */}
       <footer className="bg-[#424242] min-h-[170px] w-full flex flex-col lg:flex-row items-center justify-around gap-4 px-12 py-6">
         <img
-          src={`${process.env.NEXT_PUBLIC_SUPABASE_URL}logos/marca-1-cor-fundo-escuro.png`}
+          src={`${process.env.NEXT_PUBLIC_SUPABASE_URL}/logos/marca-1-cor-fundo-escuro.png`}
           alt="logo"
           className="w-[300px]"
         />
