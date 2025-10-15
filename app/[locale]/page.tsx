@@ -4,6 +4,11 @@ import { useState, useRef } from "react";
 import emailjs from "@emailjs/browser";
 import { FaInstagram } from "react-icons/fa6";
 import { useTranslations } from "next-intl";
+import { imagesArray1, imagesArray2 } from "../utils/imagesArray";
+import { Swiper, SwiperSlide } from "swiper/react";
+import "swiper/css";
+import "swiper/css/pagination";
+import { Autoplay, Pagination } from "swiper/modules";
 
 export default function Home() {
   const t = useTranslations();
@@ -115,7 +120,10 @@ export default function Home() {
       <section id="hero">
         <div className="hero-img-wrap">
           <img
-            src="https://hzksjbnudhswgqmccfnu.supabase.co/storage/v1/object/public/imagens-site-leco/LPs/Solar%20Real/bann.png"
+            src={`${
+              process.env.NEXT_PUBLIC_NEXT_PUBLIC_SUPABASE_URL ||
+              process.env.NEXT_PUBLIC_SUPABASE_URL
+            }/storage/v1/object/public/imagens-site-leco/LPs/Solar%20Real/bann.png`}
             alt="hero banner"
           />
         </div>
@@ -133,21 +141,42 @@ export default function Home() {
           {t("buffet.title")}
         </h1>
         <p>{t("buffet.subtitle")}</p>
-        <div className="mx-auto max-w-[1048px] grid xl:grid-cols-4 gap-4 grid-cols-2">
-          {Array.from({ length: 8 }).map((_, i) => (
+
+        {/* Desktop Grid */}
+        <div className="hidden sm:grid mx-auto max-w-[1048px] xl:grid-cols-4 sm:grid-cols-2 gap-4">
+          {imagesArray1.map((image, i) => (
             <div key={i} className="w-full">
               <img
-                src="https://hzksjbnudhswgqmccfnu.supabase.co/storage/v1/object/public/imagens-site-leco/portfolio/casamento-felipe-e-juan-alem-do-sonho/0714_0714-casamento-felipe-e-juan-alem-do-sonho-guaratiba-rj-13-10-2024.jpg"
-                className="w-full h-auto max-w-full sm:max-w-[250px] object-cover rounded-lg mx-auto transition-transform duration-300 ease-in-out transform hover:scale-105 cursor-pointer"
+                src={image}
                 alt={`Imagem ${i + 1}`}
-                onClick={() =>
-                  handleImgClick(
-                    "https://hzksjbnudhswgqmccfnu.supabase.co/storage/v1/object/public/imagens-site-leco/portfolio/casamento-felipe-e-juan-alem-do-sonho/0714_0714-casamento-felipe-e-juan-alem-do-sonho-guaratiba-rj-13-10-2024.jpg"
-                  )
-                }
+                className="w-full max-h-[165px] object-cover rounded-lg cursor-pointer transition-transform duration-300 hover:scale-105"
+                onClick={() => handleImgClick(image)}
               />
             </div>
           ))}
+        </div>
+
+        {/* Mobile Carousel */}
+        <div className="sm:hidden w-full max-w-[520px]">
+          <Swiper
+            modules={[Autoplay, Pagination]}
+            spaceBetween={10}
+            slidesPerView={1}
+            loop={true}
+            autoplay={{ delay: 3000, disableOnInteraction: false }}
+            pagination={{ clickable: true }}
+          >
+            {imagesArray1.map((image, i) => (
+              <SwiperSlide key={i}>
+                <img
+                  src={image}
+                  alt={`Imagem ${i + 1}`}
+                  className="w-full h-[300px] object-cover rounded-lg cursor-pointer"
+                  onClick={() => handleImgClick(image)}
+                />
+              </SwiperSlide>
+            ))}
+          </Swiper>
         </div>
       </section>
 
@@ -166,7 +195,9 @@ export default function Home() {
                 preload="auto"
               >
                 <source
-                  src="https://lifecampogrande.com.br/testes/wp-content/uploads/2025/08/IMG_4191.mp4"
+                  src={`${
+                    process.env.NEXT_PUBLIC_LIFE_URL || process.env.LIFE_URL
+                  }/IMG_4191.mp4`}
                   type="video/mp4"
                 />
                 Seu navegador não suporta vídeo.
@@ -233,7 +264,9 @@ export default function Home() {
         <div className="max-w-[1048px] w-full bg-white rounded-lg shadow-md grid grid-cols-1 md:grid-cols-2 gap-6">
           <div className="w-full flex justify-center">
             <img
-              src="https://hzksjbnudhswgqmccfnu.supabase.co/storage/v1/object/public/imagens-site-leco/portfolio/casamento-felipe-e-juan-alem-do-sonho/0714_0714-casamento-felipe-e-juan-alem-do-sonho-guaratiba-rj-13-10-2024.jpg"
+              src={`${
+                process.env.NEXT_PUBLIC_LIFE_URL || process.env.LIFE_URL
+              }/Casamento-Daiana-e-Lucas_1051-scaled.jpg`}
               alt="Casamento no Solar Real"
               className="w-full h-auto object-cover rounded-lg"
             />
@@ -261,20 +294,16 @@ export default function Home() {
         style={{ backgroundImage: 'url("/vector.png")' }}
       >
         <div className="grid sm:grid-cols-2 sm:grid-rows-2 gap-6 max-w-[1048px] w-full">
-          {Array.from({ length: 4 }).map((_, i) => (
+          {imagesArray2.map((image, i) => (
             <div
               key={i}
               className="w-full h-full flex items-center justify-center"
             >
               <img
-                src={`https://hzksjbnudhswgqmccfnu.supabase.co/storage/v1/object/public/imagens-site-leco/portfolio/casamento-felipe-e-juan-alem-do-sonho/0714_0714-casamento-felipe-e-juan-alem-do-sonho-guaratiba-rj-13-10-2024.jpg`}
+                src={image}
                 alt={`Imagem ${i}`}
                 className="w-full h-auto max-h-[250px] object-cover rounded-lg shadow-md hover:scale-105 cursor-pointer transition-transform duration-300 ease-in-out"
-                onClick={() =>
-                  handleImgClick(
-                    "https://hzksjbnudhswgqmccfnu.supabase.co/storage/v1/object/public/imagens-site-leco/portfolio/casamento-felipe-e-juan-alem-do-sonho/0714_0714-casamento-felipe-e-juan-alem-do-sonho-guaratiba-rj-13-10-2024.jpg"
-                  )
-                }
+                onClick={() => handleImgClick(image)}
               />
             </div>
           ))}
@@ -410,7 +439,10 @@ export default function Home() {
       {/* FOOTER */}
       <footer className="bg-[#424242] min-h-[170px] w-full flex flex-col lg:flex-row items-center justify-around gap-4 px-12 py-6">
         <img
-          src="https://hzksjbnudhswgqmccfnu.supabase.co/storage/v1/object/public/imagens-site-leco/logos/marca-1-cor-fundo-escuro.png"
+          src={`${
+            process.env.NEXT_PUBLIC_NEXT_PUBLIC_SUPABASE_URL ||
+            process.env.NEXT_PUBLIC_SUPABASE_URL
+          }/storage/v1/object/public/imagens-site-leco/logos/marca-1-cor-fundo-escuro.png`}
           alt="logo"
           className="w-[300px]"
         />
