@@ -4,6 +4,9 @@ import { notFound } from "next/navigation";
 import "../globals.css";
 import { routing } from "@/i18n/routing";
 import LanguageSwitcher from "../components/languageSwitcher";
+import { getLandingData } from "../utils/getLandingData";
+import React from "react";
+import { ConfigProvider } from "../context/ConfigContext";
 
 const voltaire = Voltaire({
   subsets: ["latin"],
@@ -18,7 +21,7 @@ const passions = Passions_Conflict({
 });
 
 export const metadata = {
-  title: "Solar Real - Leco Biagioni",
+  title: "Leco Biagioni - Landing Page",
 };
 
 export default async function RootLayout({
@@ -26,18 +29,27 @@ export default async function RootLayout({
   params,
 }: {
   children: React.ReactNode;
-  params: Promise<{ locale: string }>;
+  params: { locale: string };
 }) {
-  const { locale } = await params;
+  const { locale } = params;
+
   if (!hasLocale(routing.locales, locale)) {
     notFound();
   }
 
+  // Carrega mensagens e config da LP
+  const { messages, config } = getLandingData(locale);
+
+  // Provide config via React Context so client components can consume it safely
+  const childrenWithProps = (
+    <ConfigProvider value={config}>{children}</ConfigProvider>
+  );
+
   return (
     <html lang={locale} className={`${voltaire.variable} ${passions.variable}`}>
       <body>
-        <NextIntlClientProvider locale={locale}>
-          {children}
+        <NextIntlClientProvider locale={locale} messages={messages}>
+          {childrenWithProps}
           <LanguageSwitcher />
         </NextIntlClientProvider>
       </body>

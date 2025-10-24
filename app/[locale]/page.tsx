@@ -1,17 +1,19 @@
 "use client";
 
-import { useState, useRef } from "react";
+import { useState, useRef, useContext } from "react";
 import emailjs from "@emailjs/browser";
 import { FaInstagram } from "react-icons/fa6";
 import { useTranslations } from "next-intl";
-import { imagesArray1, imagesArray2 } from "../utils/imagesArray";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
 import { Autoplay, Pagination } from "swiper/modules";
+import { ConfigContext } from "../context/ConfigContext";
 
 export default function Home() {
   const t = useTranslations();
+
+  const config = useContext(ConfigContext);
 
   const [modalOpen, setModalOpen] = useState(false);
   const [modalImg, setModalImg] = useState<string | null>(null);
@@ -88,30 +90,12 @@ export default function Home() {
   };
 
   const cards = [
-    {
-      title: t("packages.items.assessoria.title"),
-      description: t("packages.items.assessoria.description"),
-    },
-    {
-      title: t("packages.items.local.title"),
-      description: t("packages.items.local.description"),
-    },
-    {
-      title: t("packages.items.buffet.title"),
-      description: t("packages.items.buffet.description"),
-    },
-    {
-      title: t("packages.items.bar.title"),
-      description: t("packages.items.bar.description"),
-    },
-    {
-      title: t("packages.items.decor.title"),
-      description: t("packages.items.decor.description"),
-    },
-    {
-      title: t("packages.items.dj.title"),
-      description: t("packages.items.dj.description"),
-    },
+    t("packages.items.assessoria.title"),
+    t("packages.items.local.title"),
+    t("packages.items.buffet.title"),
+    t("packages.items.bar.title"),
+    t("packages.items.decor.title"),
+    t("packages.items.dj.title"),
   ];
 
   return (
@@ -141,13 +125,15 @@ export default function Home() {
 
         {/* Desktop Grid */}
         <div className="hidden sm:grid mx-auto max-w-[1048px] xl:grid-cols-4 sm:grid-cols-2 gap-4">
-          {imagesArray1.map((image, i) => (
+          {config?.imagesArray1.map((image: string, i: number) => (
             <div key={i} className="w-full">
               <img
-                src={image}
+                src={`${process.env.NEXT_PUBLIC_LIFE_URL}/${image}`}
                 alt={`Imagem ${i + 1}`}
                 className="w-full max-h-[165px] object-cover rounded-lg cursor-pointer transition-transform duration-300 hover:scale-105"
-                onClick={() => handleImgClick(image)}
+                onClick={() =>
+                  handleImgClick(`${process.env.NEXT_PUBLIC_LIFE_URL}/${image}`)
+                }
               />
             </div>
           ))}
@@ -163,13 +149,17 @@ export default function Home() {
             autoplay={{ delay: 3000, disableOnInteraction: false }}
             pagination={{ clickable: true }}
           >
-            {imagesArray1.map((image, i) => (
+            {config?.imagesArray1.map((image: string, i: number) => (
               <SwiperSlide key={i}>
                 <img
-                  src={image}
+                  src={`${process.env.NEXT_PUBLIC_LIFE_URL}/${image}`}
                   alt={`Imagem ${i + 1}`}
                   className="w-full h-[300px] object-cover rounded-lg cursor-pointer"
-                  onClick={() => handleImgClick(image)}
+                  onClick={() =>
+                    handleImgClick(
+                      `${process.env.NEXT_PUBLIC_LIFE_URL}/${image}`
+                    )
+                  }
                 />
               </SwiperSlide>
             ))}
@@ -233,15 +223,14 @@ export default function Home() {
           <p className="text-gray-500 mb-10">{t("packages.subtitle")}</p>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-            {cards.map((card, index) => (
+            {cards.map((cardNames, index) => (
               <div
                 key={index}
-                className="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300"
+                className="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 flex justify-center items-center"
               >
                 <h3 className="font-semibold text-lg text-gray-700 mb-2">
-                  {card.title}
+                  {cardNames}
                 </h3>
-                <p className="text-gray-500">{card.description}</p>
               </div>
             ))}
           </div>
@@ -250,10 +239,10 @@ export default function Home() {
 
       <section className="w-full flex flex-col items-center px-6 md:mt-0 mt-16">
         <h1 className="font-passions-conflict text-6xl text-[#576250] mb-2">
-          {t("solar.title")}
+          {t("event.title")}
         </h1>
         <p className="text-gray-500 text-lg mb-10 text-center">
-          {t("solar.subtitle")}
+          {t("event.subtitle")}
         </p>
 
         <div className="max-w-[1048px] w-full bg-white rounded-lg shadow-md grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -267,17 +256,17 @@ export default function Home() {
 
           <div className="flex flex-col justify-center p-6">
             <h2 className="text-2xl font-bold text-gray-700 mb-2">
-              {t("solar.card.title")}
+              {t("event.card.title")}
             </h2>
             <span className="text-sm text-gray-500 mb-4">
-              {t("solar.card.place")}
+              {t("event.card.place")}
             </span>
-            <p className="text-gray-600 mb-4">{t("solar.card.paragraph1")}</p>
-            <p className="text-gray-600 mb-4">{t("solar.card.paragraph2")}</p>
+            <p className="text-gray-600 mb-4">{t("event.card.paragraph1")}</p>
+            <p className="text-gray-600 mb-4">{t("event.card.paragraph2")}</p>
             <p className="text-gray-600 font-semibold">
-              {t("solar.card.paragraph3")}
+              {t("event.card.paragraph3")}
             </p>
-            <p className="text-gray-600">{t("solar.card.paragraph4")}</p>
+            <p className="text-gray-600">{t("event.card.paragraph4")}</p>
           </div>
         </div>
       </section>
@@ -287,16 +276,18 @@ export default function Home() {
         style={{ backgroundImage: 'url("/vector.png")' }}
       >
         <div className="grid sm:grid-cols-2 sm:grid-rows-2 gap-6 max-w-[1048px] w-full">
-          {imagesArray2.map((image, i) => (
+          {config?.imagesArray2.map((image: string, i: number) => (
             <div
               key={i}
               className="w-full h-full flex items-center justify-center"
             >
               <img
-                src={image}
+                src={`${process.env.NEXT_PUBLIC_LIFE_URL}/${image}`}
                 alt={`Imagem ${i}`}
                 className="w-full h-auto max-h-[250px] object-cover rounded-lg shadow-md hover:scale-105 cursor-pointer transition-transform duration-300 ease-in-out"
-                onClick={() => handleImgClick(image)}
+                onClick={() =>
+                  handleImgClick(`${process.env.NEXT_PUBLIC_LIFE_URL}/${image}`)
+                }
               />
             </div>
           ))}

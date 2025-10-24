@@ -7,7 +7,7 @@
     "title": "Buffet & Decor",
     "subtitle": "That you’ll remember forever"
   },
-  "solar": {
+  "event": {
     "title": "Solar Real",
     "subtitle": "A Colonial Mansion with Cinematic Views of Rio",
     "card": {
@@ -31,28 +31,22 @@
     "subtitle": "Our proposal includes all the essential pillars for a successful wedding:",
     "items": {
       "assessoria": {
-        "title": "Planning & Coordination",
-        "description": "Experienced professionals to ensure everything goes as planned."
+        "title": "Planning & Coordination"
       },
       "local": {
-        "title": "Venue & Photography & Videography",
-        "description": "Solar Real with generator, cleaning, and security, plus professionals to capture every magical moment."
+        "title": "Venue & Photography & Videography"
       },
       "buffet": {
-        "title": "Buffet & Sweets",
-        "description": "Appetizer tables, cocktail bites, mini portions, and sweets to delight your guests on your big day."
+        "title": "Buffet & Sweets"
       },
       "bar": {
-        "title": "Open Bar",
-        "description": "Varied imported drinks to refresh this unique moment."
+        "title": "Open Bar"
       },
       "decor": {
-        "title": "Complete Decoration",
-        "description": "We transform the space into the setting of your dreams."
+        "title": "Complete Decoration"
       },
       "dj": {
-        "title": "DJ & Sound & Light Setup",
-        "description": "Perfect music and lighting to energize your party."
+        "title": "DJ & Sound & Light Setup"
       }
     }
   },

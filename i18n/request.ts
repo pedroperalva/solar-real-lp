@@ -10,6 +10,10 @@ export default getRequestConfig(async ({ requestLocale }) => {
 
   return {
     locale,
-    messages: (await import(`../messages/${locale}.json`)).default,
+    messages: (
+      await import(
+        `../configs/${process.env.NEXT_PUBLIC_CONFIG}/messages/${locale}.json`
+      )
+    ).default,
   };
 });
