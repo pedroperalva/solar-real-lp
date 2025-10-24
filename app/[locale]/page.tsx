@@ -247,9 +247,8 @@ export default function Home() {
 
         <div className="max-w-[1048px] w-full bg-white rounded-lg shadow-md grid grid-cols-1 md:grid-cols-2 gap-6">
           <div className="w-full flex justify-center">
-            <img
-              src={`${process.env.NEXT_PUBLIC_LIFE_URL}/Casamento-Daiana-e-Lucas_1051-scaled.jpg`}
-              alt="Casamento no Solar Real"
+            <iframe
+              src={`${process.env.NEXT_PUBLIC_SUPABASE_URL}/Videos%20lps/solarreal.mp4`}
               className="w-full h-auto object-cover rounded-lg"
             />
           </div>
