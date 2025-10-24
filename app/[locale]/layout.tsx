@@ -29,18 +29,17 @@ export default async function RootLayout({
   params,
 }: {
   children: React.ReactNode;
-  params: { locale: string };
+  params: Promise<{ locale: string }> | { locale: string };
 }) {
-  const { locale } = params;
+  const resolvedParams = await Promise.resolve(params);
+  const { locale } = resolvedParams;
 
   if (!hasLocale(routing.locales, locale)) {
     notFound();
   }
 
-  // Carrega mensagens e config da LP
   const { messages, config } = getLandingData(locale);
 
-  // Provide config via React Context so client components can consume it safely
   const childrenWithProps = (
     <ConfigProvider value={config}>{children}</ConfigProvider>
   );
