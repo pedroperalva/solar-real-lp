@@ -1,22 +1,22 @@
 {
   "hero": {
-    "title": "Solar Real",
-    "subtitle": "Discover the magic of Solar Real, a 19th century colonial mansion that offers stunning views of Rio de Janeiro."
+    "title": "Beyond the Dream",
+    "subtitle": "Every corner was designed to harmonize with the natural landscape, creating a welcoming, romantic and breathtaking atmosphere."
   },
   "buffet": {
     "title": "Unique Moments",
     "subtitle": "That you will remember forever"
   },
   "event": {
-    "title": "Solar Real",
-    "subtitle": "A Colonial Mansion with Cinematic Views of Rio",
+    "title": "Beyond the Dream",
+    "subtitle": "Where the extraordinary happens",
     "card": {
-      "title": "Cinematic Views",
-      "place": "Solar Real",
-      "paragraph1": "Discover the magic of Solar Real, a 19th century colonial mansion that offers stunning views of Rio de Janeiro. Located in one of the city's most traditional neighborhoods, this historic property is the perfect place to host an unforgettable party.",
-      "paragraph2": "The views of Rio de Janeiro from Solar Real are truly cinematic. Imagine yourself surrounded by the city's natural beauty, with the opportunity to make the most of your party.",
-      "paragraph3": "A Party Just Like at Your Home!",
-      "paragraph4": "With its colonial architecture and welcoming atmosphere, Solar Real allows you and your guests to feel at home. It is the perfect place to host an intimate and sophisticated party, with all the details you desire."
+      "title": "The Perfect Setting",
+      "place": "Beyond the Dream",
+      "paragraph1": "Imagine celebrating love in a place that seems straight out of a fairy tale. Surrounded by lush nature and a landscaping project that enchants in every detail, Beyond the Dream is the perfect setting for weddings that seek to combine elegance, comfort and emotion.",
+      "paragraph2": "With modern architecture, sophisticated design and impeccable structure, the space offers everything you need to live an unforgettable day. Every corner was designed to harmonize with the natural landscape, creating a welcoming, romantic and breathtaking atmosphere.",
+      "paragraph3": "Located at the foot of the Atlantic Forest, in Guaratiba, Beyond the Dream provides a unique experience, where luxury and tranquility meet. It is the ideal place for those who want an outdoor wedding, with the charm and refinement of a grand event.",
+      "paragraph4": "And the best part: having your wedding at Beyond the Dream is totally possible. Leco Biagioni's office has the expertise and care needed to transform this stunning setting into the stage for your big day — with impeccable and meaningful production."
     }
   },
   "about": {
@@ -52,7 +52,7 @@
   },
   "investment": {
     "title": "Investment:",
-    "price": "Starting from R$ 180,000.00*",
+    "price": "Starting from R$ 200,000.00*",
     "note": "*This value is based on 100 guests and may be adjusted up or down depending on the customization made for each couple."
   },
   "form": {

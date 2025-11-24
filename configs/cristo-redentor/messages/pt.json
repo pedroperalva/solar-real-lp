@@ -1,22 +1,22 @@
 {
   "hero": {
-    "title": "Solar Real",
-    "subtitle": "Descubra a magia do Solar Real, uma mansão colonial do século XIX que oferece vistas deslumbrantes do Rio de Janeiro."
+    "title": "Cristo Redentor",
+    "subtitle": " O Cristo Redentor agora é palco de cerimônias únicas, oferecendo uma experiência celestial inesquecível para você e seus convidados."
   },
   "buffet": {
     "title": "Momentos Únicos",
     "subtitle": "Que você se lembrará para sempre"
   },
   "event": {
-    "title": "Solar Real",
-    "subtitle": "Uma Mansão Colonial com Vistas Cinematográficas do Rio",
+    "title": "Cristo Redentor",
+    "subtitle": "Casar aos pés do Cristo Redentor: Um sonho possível!",
     "card": {
-      "title": "Vistas Cinematográficas",
-      "place": "Solar Real",
-      "paragraph1": "Descubra a magia do Solar Real, uma mansão colonial do século XIX que oferece vistas deslumbrantes do Rio de Janeiro. Localizada em um dos bairros mais tradicionais da cidade, essa propriedade histórica é o local perfeito para realizar uma festa inesquecível.",
-      "paragraph2": "As vistas do Rio de Janeiro a partir do Solar Real são verdadeiramente cinematográficas. Imagine-se cercado pela beleza natural da cidade, com a oportunidade de aproveitar ao máximo a sua festa.",
-      "paragraph3": "Uma Festa como se fosse na Sua Casa!",
-      "paragraph4": "Com sua arquitetura colonial e atmosfera acolhedora, o Solar Real permite que você e seus convidados se sintam em casa. É o local perfeito para realizar uma festa íntima e sofisticada, com todos os detalhes que você deseja."
+      "title": "O Cenário Perfeito",
+      "place": "Cristo Redentor",
+      "paragraph1": "Imagine dizer “sim” em um dos lugares mais emblemáticos do mundo, com a cidade do Rio de Janeiro aos seus pés e o Cristo abençoando a cada instante. O Cristo Redentor agora é palco de cerimônias únicas, oferecendo uma experiência celestial inesquecível para você e seus convidados.",
+      "paragraph2": "Escolha entre o encanto do nascer do sol, com o céu dourado anunciando um novo começo, ou a magia de uma noite estrelada, quando o amor brilha ainda mais forte. Cada momento é uma bênção, cada detalhe, um símbolo de eternidade.",
+      "paragraph3": "Com o suporte e a experiência do escritório Leco Biagioni, o seu sonho ganha forma — com toda a estrutura, planejamento e emoção que um casamento nesse cenário sagrado merece.",
+      "paragraph4": "Realize o casamento dos seus sonhos no alto do Corcovado e eternize o amor sob a vista mais famosa do mundo."
     }
   },
   "about": {
@@ -52,7 +52,7 @@
   },
   "investment": {
     "title": "Investimento:",
-    "price": "À partir de R$ 180.000,00*",
+    "price": "À partir de R$ 80.000,00*",
     "note": "*Este valor é baseado em 100 convidados e pode sofrer alteração para mais ou para menos dependendo da personalização que será feita para cada casal."
   },
   "form": {

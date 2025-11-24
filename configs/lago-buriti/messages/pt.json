@@ -1,22 +1,22 @@
 {
-  "hero": {
-    "title": "Solar Real",
-    "subtitle": "Descubra a magia do Solar Real, uma mansão colonial do século XIX que oferece vistas deslumbrantes do Rio de Janeiro."
+ "hero": {
+    "title": "Lago Buriti",
+    "subtitle": " Uma natureza exuberante, refletida nas águas calmas de um lago dourado pelo pôr do sol."
   },
   "buffet": {
     "title": "Momentos Únicos",
     "subtitle": "Que você se lembrará para sempre"
   },
   "event": {
-    "title": "Solar Real",
-    "subtitle": "Uma Mansão Colonial com Vistas Cinematográficas do Rio",
+    "title": "Lago Buriti",
+    "subtitle": "Casar no Lago Buriti: Natureza, Romance e o Pôr do Sol Perfeito",
     "card": {
-      "title": "Vistas Cinematográficas",
-      "place": "Solar Real",
-      "paragraph1": "Descubra a magia do Solar Real, uma mansão colonial do século XIX que oferece vistas deslumbrantes do Rio de Janeiro. Localizada em um dos bairros mais tradicionais da cidade, essa propriedade histórica é o local perfeito para realizar uma festa inesquecível.",
-      "paragraph2": "As vistas do Rio de Janeiro a partir do Solar Real são verdadeiramente cinematográficas. Imagine-se cercado pela beleza natural da cidade, com a oportunidade de aproveitar ao máximo a sua festa.",
-      "paragraph3": "Uma Festa como se fosse na Sua Casa!",
-      "paragraph4": "Com sua arquitetura colonial e atmosfera acolhedora, o Solar Real permite que você e seus convidados se sintam em casa. É o local perfeito para realizar uma festa íntima e sofisticada, com todos os detalhes que você deseja."
+      "title": "O Cenário Perfeito",
+      "place": "Lago Buriti",
+      "paragraph1": "Imagine celebrar o amor cercado por uma natureza exuberante, refletida nas águas calmas de um lago dourado pelo pôr do sol. O Lago Buriti é o cenário ideal para quem sonha com um casamento encantador, ao ar livre, onde cada detalhe se harmoniza com a beleza do ambiente.",
+      "paragraph2": "Com seu paisagismo deslumbrante, arquitetura integrada à natureza e estrutura impecável, o espaço oferece o equilíbrio perfeito entre elegância e serenidade. A cada instante, o cenário se transforma em uma pintura viva — o momento perfeito para dizer “sim”.",
+      "paragraph3": "Com o suporte do escritório Leco Biagioni, cada elemento ganha propósito: do altar à decoração, tudo é planejado para criar uma experiência única, romântica e inesquecível.",
+      "paragraph4": "Viva o seu grande dia em um dos lugares mais encantadores do Rio de Janeiro e eternize sua história com o brilho do sol se pondo sobre o Lago Buriti."
     }
   },
   "about": {
@@ -51,8 +51,8 @@
     }
   },
   "investment": {
-    "title": "Investimento:",
-    "price": "À partir de R$ 180.000,00*",
+   "title": "Investimento:",
+    "price": "À partir de R$ 200.000,00*",
     "note": "*Este valor é baseado em 100 convidados e pode sofrer alteração para mais ou para menos dependendo da personalização que será feita para cada casal."
   },
   "form": {

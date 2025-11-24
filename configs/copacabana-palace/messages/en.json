@@ -1,22 +1,22 @@
 {
   "hero": {
-    "title": "Solar Real",
-    "subtitle": "Discover the magic of Solar Real, a 19th century colonial mansion that offers stunning views of Rio de Janeiro."
+    "title": "Copacabana Palace",
+    "subtitle": "The Perfect Setting for Your Dream Wedding in Rio de Janeiro."
   },
   "buffet": {
     "title": "Unique Moments",
     "subtitle": "That you will remember forever"
   },
   "event": {
-    "title": "Solar Real",
-    "subtitle": "A Colonial Mansion with Cinematic Views of Rio",
+    "title": "Copacabana Palace",
+    "subtitle": "Celebrate love at Rio de Janeiro's most iconic hotel",
     "card": {
-      "title": "Cinematic Views",
-      "place": "Solar Real",
-      "paragraph1": "Discover the magic of Solar Real, a 19th century colonial mansion that offers stunning views of Rio de Janeiro. Located in one of the city's most traditional neighborhoods, this historic property is the perfect place to host an unforgettable party.",
-      "paragraph2": "The views of Rio de Janeiro from Solar Real are truly cinematic. Imagine yourself surrounded by the city's natural beauty, with the opportunity to make the most of your party.",
+      "title": "The Perfect Setting",
+      "place": "Copacabana Palace",
+      "paragraph1": "Imagine celebrating love at Rio de Janeiro's most iconic hotel — where every detail breathes elegance, history and sophistication. The Copacabana Palace is more than a setting: it is a symbol of glamour and tradition that transforms your big day into an unforgettable event.",
+      "paragraph2": "With the expertise of Leco Biagioni's office, the impossible becomes reality. From the ceremony to the majestic ballrooms, every moment is planned to reflect the exclusivity that a wedding at this legendary address deserves.",
       "paragraph3": "A Party Just Like at Your Home!",
-      "paragraph4": "With its colonial architecture and welcoming atmosphere, Solar Real allows you and your guests to feel at home. It is the perfect place to host an intimate and sophisticated party, with all the details you desire."
+      "paragraph4": "Fulfill the dream of saying 'I do' in one of the most desired places in the world — and immortalize your story with charm, luxury and perfection."
     }
   },
   "about": {
@@ -52,7 +52,7 @@
   },
   "investment": {
     "title": "Investment:",
-    "price": "Starting from R$ 180,000.00*",
+    "price": "Starting from R$ 350,000.00*",
     "note": "*This value is based on 100 guests and may be adjusted up or down depending on the customization made for each couple."
   },
   "form": {

@@ -38,7 +38,7 @@ export default async function RootLayout({
     notFound();
   }
 
-  const { messages, config } = getLandingData(locale);
+  const { messages, config } = await getLandingData(locale);
 
   const childrenWithProps = (
     <ConfigProvider value={config}>{children}</ConfigProvider>

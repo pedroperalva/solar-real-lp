@@ -104,7 +104,7 @@ export default function Home() {
       <section id="hero">
         <div className="hero-img-wrap">
           <img
-            src={`${process.env.NEXT_PUBLIC_SUPABASE_URL}/LPs/Solar%20Real/bann.png`}
+            src={config?.assets.heroBanner}
             alt="hero banner"
           />
         </div>
@@ -117,7 +117,7 @@ export default function Home() {
       </section>
 
       {/* BUFFET & DECOR */}
-      <section className="flex flex-col items-center justify-center text-center gap-4 px-8">
+      <section className="flex flex-col items-center justify-center text-center gap-4 px-8 mt-8">
         <h1 className="text-6xl font-passions-conflict text-[#576250]">
           {t("buffet.title")}
         </h1>
@@ -128,11 +128,11 @@ export default function Home() {
           {config?.imagesArray1.map((image: string, i: number) => (
             <div key={i} className="w-full">
               <img
-                src={`${process.env.NEXT_PUBLIC_LIFE_URL}/${image}`}
+                src={image}
                 alt={`Imagem ${i + 1}`}
                 className="w-full max-h-[165px] object-cover rounded-lg cursor-pointer transition-transform duration-300 hover:scale-105"
                 onClick={() =>
-                  handleImgClick(`${process.env.NEXT_PUBLIC_LIFE_URL}/${image}`)
+                  handleImgClick(image)
                 }
               />
             </div>
@@ -152,12 +152,12 @@ export default function Home() {
             {config?.imagesArray1.map((image: string, i: number) => (
               <SwiperSlide key={i}>
                 <img
-                  src={`${process.env.NEXT_PUBLIC_LIFE_URL}/${image}`}
+                  src={image}
                   alt={`Imagem ${i + 1}`}
                   className="w-full h-[300px] object-cover rounded-lg cursor-pointer"
                   onClick={() =>
                     handleImgClick(
-                      `${process.env.NEXT_PUBLIC_LIFE_URL}/${image}`
+                      image
                     )
                   }
                 />
@@ -281,11 +281,11 @@ export default function Home() {
               className="w-full h-full flex items-center justify-center"
             >
               <img
-                src={`${process.env.NEXT_PUBLIC_LIFE_URL}/${image}`}
+                src={image}
                 alt={`Imagem ${i}`}
                 className="w-full h-auto max-h-[250px] object-cover rounded-lg shadow-md hover:scale-105 cursor-pointer transition-transform duration-300 ease-in-out"
                 onClick={() =>
-                  handleImgClick(`${process.env.NEXT_PUBLIC_LIFE_URL}/${image}`)
+                  handleImgClick(image)
                 }
               />
             </div>
@@ -387,6 +387,15 @@ export default function Home() {
             >
               {sending ? "Enviando..." : t("form.button")}
             </button>
+            <p className="text-center text-md text-gray-500 leading-relaxed mb-2">ou</p>
+            <a
+              href="https://wa.me/5521999972025"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="w-full rounded-md bg-green-600 px-4 py-2 text-white font-medium hover:bg-green-700 transition cursor-pointer text-center inline-block"
+            >
+              Falar no WhatsApp
+            </a>
 
             {statusMsg && (
               <p className="text-sm text-center mt-2 text-gray-700">

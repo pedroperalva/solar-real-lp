@@ -1,7 +1,7 @@
 import fs from "fs";
 import path from "path";
 
-export function getLandingData(locale: string) {
+export async function getLandingData(locale: string) {
   const landingName = process.env.NEXT_PUBLIC_CONFIG;
   if (!landingName) {
     throw new Error("Variável NEXT_PUBLIC_CONFIG não definida");
@@ -9,12 +9,13 @@ export function getLandingData(locale: string) {
 
   const basePath = path.join(process.cwd(), "configs", landingName);
 
-  // Lê config.json
-  const configPath = path.join(basePath, "config.json");
+  // Importa config.js dinamicamente
+  const configPath = path.join(basePath, "config.js");
   if (!fs.existsSync(configPath)) {
-    throw new Error(`config.json não encontrado: ${configPath}`);
+    throw new Error(`config.js não encontrado: ${configPath}`);
   }
-  const config = JSON.parse(fs.readFileSync(configPath, "utf-8"));
+  const configModule = await import(`@/configs/${landingName}/config.js`);
+  const config = configModule.default;
 
   // Lê mensagens específicas do idioma
   const messagesPath = path.join(basePath, "messages", `${locale}.json`);

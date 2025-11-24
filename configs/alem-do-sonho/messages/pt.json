@@ -1,22 +1,22 @@
 {
   "hero": {
-    "title": "Solar Real",
-    "subtitle": "Descubra a magia do Solar Real, uma mansão colonial do século XIX que oferece vistas deslumbrantes do Rio de Janeiro."
+    "title": "Além do Sonho",
+    "subtitle": " Cada canto foi pensado para harmonizar com a paisagem natural, criando um ambiente acolhedor, romântico e deslumbrante."
   },
   "buffet": {
     "title": "Momentos Únicos",
     "subtitle": "Que você se lembrará para sempre"
   },
   "event": {
-    "title": "Solar Real",
-    "subtitle": "Uma Mansão Colonial com Vistas Cinematográficas do Rio",
+    "title": "Além do Sonho",
+    "subtitle": "Onde o extraordinário acontece",
     "card": {
-      "title": "Vistas Cinematográficas",
-      "place": "Solar Real",
-      "paragraph1": "Descubra a magia do Solar Real, uma mansão colonial do século XIX que oferece vistas deslumbrantes do Rio de Janeiro. Localizada em um dos bairros mais tradicionais da cidade, essa propriedade histórica é o local perfeito para realizar uma festa inesquecível.",
-      "paragraph2": "As vistas do Rio de Janeiro a partir do Solar Real são verdadeiramente cinematográficas. Imagine-se cercado pela beleza natural da cidade, com a oportunidade de aproveitar ao máximo a sua festa.",
-      "paragraph3": "Uma Festa como se fosse na Sua Casa!",
-      "paragraph4": "Com sua arquitetura colonial e atmosfera acolhedora, o Solar Real permite que você e seus convidados se sintam em casa. É o local perfeito para realizar uma festa íntima e sofisticada, com todos os detalhes que você deseja."
+      "title": "O Cenário Perfeito",
+      "place": "Além do Sonho",
+      "paragraph1": "Imagine celebrar o amor em um lugar que parece ter saído de um conto de fadas. Cercado pela natureza exuberante e com um projeto paisagístico que encanta em cada detalhe, o Além do Sonho é o cenário perfeito para casamentos que buscam unir elegância, conforto e emoção.",
+      "paragraph2": "Com arquitetura moderna, design sofisticado e uma estrutura impecável, o espaço oferece tudo o que você precisa para viver um dia inesquecível. Cada canto foi pensado para harmonizar com a paisagem natural, criando um ambiente acolhedor, romântico e deslumbrante.",
+      "paragraph3": "Localizado aos pés da Mata Atlântica, em Guaratiba, o Além do Sonho proporciona uma experiência única, onde o luxo e a tranquilidade se encontram. É o lugar ideal para quem deseja um casamento ao ar livre, com o charme e o requinte de um grande evento.",
+      "paragraph4": "E o melhor: realizar seu casamento no Além do Sonho é totalmente possível. O escritório Leco Biagioni tem a expertise e o cuidado necessários para transformar esse cenário deslumbrante no palco do seu grande dia — com uma produção impecável e cheia de significado."
     }
   },
   "about": {
@@ -52,7 +52,7 @@
   },
   "investment": {
     "title": "Investimento:",
-    "price": "À partir de R$ 180.000,00*",
+    "price": "À partir de R$ 200.000,00*",
     "note": "*Este valor é baseado em 100 convidados e pode sofrer alteração para mais ou para menos dependendo da personalização que será feita para cada casal."
   },
   "form": {
