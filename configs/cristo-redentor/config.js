@@ -4,9 +4,9 @@ export default {
   localeDefault: "pt",
   author: "Leco Biagioni",
   assets: {
-    heroBanner: `${process.env.NEXT_PUBLIC_SUPABASE_URL}/@pchufi-810.JPEG`,
+    heroBanner: `${process.env.NEXT_PUBLIC_LIFE_URL}/@pchufi-810.jpeg`,
     vectorBackground: "/vector.png",
-    featuredImage: `${process.env.NEXT_PUBLIC_SUPABASE_URL}/storage/v1/object/public/imagens-site-leco/Videos%20lps/cristo.mp4`
+    featuredImage: `${process.env.NEXT_PUBLIC_SUPABASE_URL}/Videos%20lps/cristo.mp4`
   },
   imagesArray1: [
     `${process.env.NEXT_PUBLIC_LIFE_URL}/Cristo_Redentor_-_Rio_de_Janeiro_-_20230321170956-960x580-1.jpg`,

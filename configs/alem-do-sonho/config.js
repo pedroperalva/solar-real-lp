@@ -4,9 +4,9 @@ export default {
   localeDefault: "pt",
   author: "Leco Biagioni",
   assets: {
-    heroBanner: `${process.env.NEXT_PUBLIC_SUPABASE_URL}/0714_0714-casamento-felipe-e-juan-alem-do-sonho-guaratiba-rj-13-10-2024.jpg`,
+    heroBanner: `${process.env.NEXT_PUBLIC_LIFE_URL}/0714_0714-casamento-felipe-e-juan-alem-do-sonho-guaratiba-rj-13-10-2024.jpeg`,
     vectorBackground: "/vector.png",
-    featuredImage: `${process.env.NEXT_PUBLIC_SUPABASE_URL}/storage/v1/object/public/imagens-site-leco/Videos%20lps/cristo.mp4`
+    featuredImage: `${process.env.NEXT_PUBLIC_SUPABASE_URL}/Videos%20lps/cristo.mp4`
   },
   imagesArray1: [
     `${process.env.NEXT_PUBLIC_LIFE_URL}/cropped-Logo-verde-1024x892-1.png`,

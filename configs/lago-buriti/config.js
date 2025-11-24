@@ -6,7 +6,7 @@ export default {
   assets: {
     heroBanner: `${process.env.NEXT_PUBLIC_SUPABASE_URL}/LPs/Lago%20BUriti/DSC1279.jpeg`,
     vectorBackground: "/vector.png",
-    featuredImage: `${process.env.NEXT_PUBLIC_SUPABASE_URL}/storage/v1/object/public/imagens-site-leco/Videos%20lps/lago%20buriti.mp4`
+    featuredImage: `${process.env.NEXT_PUBLIC_SUPABASE_URL}/Videos%20lps/lago%20buriti.mp4`
   },
   imagesArray1: [
     `${process.env.NEXT_PUBLIC_LIFE_URL}/DSC1279.jpeg`,
