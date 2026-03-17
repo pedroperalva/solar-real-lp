@@ -1,0 +1,82 @@
+{
+  "hero": {
+    "title": "Xian Rio",
+    "subtitle": "O alto cenário carioca onde sua história de amor encontra a vista mais emblemática da cidade."
+  },
+  "buffet": {
+    "title": "Momentos Únicos",
+    "subtitle": "Que você se lembrará para sempre"
+  },
+  "event": {
+    "title": "Xian Rio",
+    "subtitle": "Uma vista panorâmica inigualável!",
+    "card": {
+      "title": "Vista, arquitetura e muita emoção",
+      "place": "Xian Rio",
+      "paragraph1": "Imagine celebrar o amor em um cenário que combina sofisticação, cultura e uma vista de tirar o fôlego. No Xian Rio, cada detalhe parece ter sido criado para transformar o seu casamento em uma experiência inesquecível—do pôr do sol refletido na Baía de Guanabara ao ambiente contemporâneo com toques orientais que encantam à primeira vista.",
+      "paragraph2": "Com design moderno, atmosfera acolhedora e uma estrutura impecável, o Xian oferece tudo o que um casamento sofisticado exige. Os espaços integrados, a iluminação cuidadosamente planejada e a decoração elegante criam um clima romântico e exclusivo, perfeito para quem busca unir estilo, conforto e emoção.",
+      "paragraph3": "Localizado no rooftop do Bossa Nova Mall, o Xian Rio presenteia seus convidados com uma das vistas mais privilegiadas da cidade: Pão de Açúcar, Cristo Redentor e o mar, tudo emoldurando o seu grande dia de maneira única. É o cenário ideal para casais que desejam celebrar em um ambiente urbano, moderno e absolutamente deslumbrante.",
+      "paragraph4": "E o melhor: tornar esse sonho realidade é simples e totalmente possível. O escritório Leco Biagioni possui a expertise necessária para transformar o Xian no palco perfeito para o seu casamento — com produção impecável, sensibilidade e cada detalhe pensado para refletir a história do casal."
+    }
+  },
+  "about": {
+    "title": "Quem Somos",
+    "name": "Leco Biagioni",
+    "role": "Wedding Planner",
+    "description": "Nossa equipe de assessoria e cerimonial, liderada por Leco Biagioni, está aqui para transformar seu casamento em uma experiência única e inesquecível. Com anos de experiência e um olhar atento aos detalhes, garantimos que cada momento seja perfeito. Leco Biagioni trabalha com os melhores fornecedores do mercado, e os noivos contarão com sua assessoria do início ao fim.",
+    "cta": "Fale Conosco"
+  },
+  "packages": {
+    "title": "Pacotes All-Inclusive",
+    "subtitle": "Nossa proposta inclui todos os pilares essenciais para um casamento de sucesso:",
+    "items": {
+      "assessoria": {
+        "title": "Assessoria & Cerimonial"
+      },
+      "local": {
+        "title": "Local & Foto & Filmagem"
+      },
+      "buffet": {
+        "title": "Buffet & Doces"
+      },
+      "bar": {
+        "title": "Open Bar"
+      },
+      "decor": {
+        "title": "Decoração Completa"
+      },
+      "dj": {
+        "title": "DJ & Estrutura de Som & Luz"
+      }
+    }
+  },
+  "investment": {
+    "title": "Investimento:",
+    "price": "À partir de R$ 300.000,00*",
+    "note": "*Este valor é baseado em 100 convidados e pode sofrer alteração para mais ou para menos dependendo da personalização que será feita para cada casal."
+  },
+  "form": {
+    "title": "Nós cuidamos de todos os detalhes",
+    "subtitle": "Deixe que a nossa equipe de especialistas cuide de todos os detalhes para que você possa aproveitar cada momento ao lado dos seus amigos e familiares. Entre em contato conosco e vamos começar a planejar o casamento dos seus sonhos!",
+    "contact": "Informações de Contato",
+    "fields": {
+      "name": "Nome",
+      "email": "Email",
+      "phone": "Celular",
+      "event": "Selecione o tipo de evento",
+      "wedding": "Casamento",
+      "anniversary": "Aniversário",
+      "baptism": "Batizado",
+      "message": "Deixe qualquer mensagem que possa nos ajudar a entender melhor!"
+    },
+    "button": "Enviar",
+    "status": {
+      "missingFields": "Por favor, preencha nome, email e tipo de evento.",
+      "success": "Mensagem enviada com sucesso!",
+      "error": "Erro ao enviar. Tente novamente mais tarde."
+    }
+  },
+  "footer": {
+    "rights": "2025 - Todos os direitos reservados"
+  }
+}

@@ -1,0 +1,82 @@
+{
+  "hero": {
+    "title": "Xian Rio",
+    "subtitle": "The elevated Rio scenery where your love story meets the city's most iconic view."
+  },
+  "buffet": {
+    "title": "Unique Moments",
+    "subtitle": "That you will remember forever"
+  },
+  "event": {
+    "title": "Xian Rio",
+    "subtitle": "An unmatched panoramic view!",
+    "card": {
+      "title": "Views, architecture and pure emotion",
+      "place": "Xian Rio",
+      "paragraph1": "Imagine celebrating love in a setting that combines sophistication, culture and a breathtaking view. At Xian Rio, every detail seems to have been created to transform your wedding into an unforgettable experience — from the sunset reflected on Guanabara Bay to the contemporary atmosphere with oriental touches that enchant at first sight.",
+      "paragraph2": "With modern design, a welcoming atmosphere and an impeccable structure, Xian offers everything a sophisticated wedding demands. The integrated spaces, carefully planned lighting and elegant decor create a romantic and exclusive ambiance, perfect for those seeking to blend style, comfort and emotion.",
+      "paragraph3": "Located on the rooftop of Bossa Nova Mall, Xian Rio gifts its guests with one of the city's most privileged views: Sugarloaf Mountain, Christ the Redeemer and the sea, all framing your big day in a unique way. It is the ideal setting for couples who wish to celebrate in an urban, modern and absolutely stunning environment.",
+      "paragraph4": "And the best part: making this dream come true is simple and totally possible. Leco Biagioni's office has the expertise needed to transform Xian into the perfect stage for your wedding — with impeccable production, sensitivity and every detail designed to reflect the couple's story."
+    }
+  },
+  "about": {
+    "title": "About Us",
+    "name": "Leco Biagioni",
+    "role": "Wedding Planner",
+    "description": "Our advisory and ceremonial team, led by Leco Biagioni, is here to transform your wedding into a unique and unforgettable experience. With years of experience and an eye for detail, we ensure that every moment is perfect. Leco Biagioni works with the best suppliers in the market, and the couple will have their advisory from start to finish.",
+    "cta": "Contact Us"
+  },
+  "packages": {
+    "title": "All-Inclusive Packages",
+    "subtitle": "Our proposal includes all essential pillars for a successful wedding:",
+    "items": {
+      "assessoria": {
+        "title": "Advisory & Ceremonial"
+      },
+      "local": {
+        "title": "Venue & Photo & Video"
+      },
+      "buffet": {
+        "title": "Buffet & Sweets"
+      },
+      "bar": {
+        "title": "Open Bar"
+      },
+      "decor": {
+        "title": "Complete Decoration"
+      },
+      "dj": {
+        "title": "DJ & Sound & Lighting Structure"
+      }
+    }
+  },
+  "investment": {
+    "title": "Investment:",
+    "price": "Starting from R$ 300,000.00*",
+    "note": "*This value is based on 100 guests and may be adjusted up or down depending on the customization made for each couple."
+  },
+  "form": {
+    "title": "We take care of all the details",
+    "subtitle": "Let our team of specialists take care of all the details so you can enjoy every moment with your friends and family. Contact us and let's start planning your dream wedding!",
+    "contact": "Contact Information",
+    "fields": {
+      "name": "Name",
+      "email": "Email",
+      "phone": "Phone",
+      "event": "Select event type",
+      "wedding": "Wedding",
+      "anniversary": "Anniversary",
+      "baptism": "Baptism",
+      "message": "Leave any message that can help us understand better!"
+    },
+    "button": "Submit",
+    "status": {
+      "missingFields": "Please fill in name, email and event type.",
+      "success": "Message sent successfully!",
+      "error": "Error sending. Please try again later."
+    }
+  },
+  "footer": {
+    "rights": "2025 - All rights reserved"
+  }
+}

@@ -245,7 +245,7 @@ export default function Home() {
               ) : (
                 <iframe
                   src={config.assets.featuredImage}
-                  className="w-full h-auto object-cover rounded-lg"
+                  className="w-full h-[400px] md:h-auto rounded-lg"
                 />
               ))}
           </div>
@@ -268,24 +268,103 @@ export default function Home() {
       </section>
 
       <section
-        className="w-full bg-no-repeat bg-center bg-cover mt-12 px-8 min-h-[675px] flex flex-col justify-center items-center"
+        className="w-full bg-no-repeat bg-center bg-cover mt-12 px-8 py-8 md:py-0 min-h-0 md:min-h-[675px] flex flex-col justify-center items-center"
         style={{ backgroundImage: 'url("/vector.png")' }}
       >
-        <div className="grid sm:grid-cols-2 sm:grid-rows-2 gap-6 max-w-[1048px] w-full">
-          {config?.imagesArray2.map((image: string, i: number) => (
-            <div
-              key={i}
-              className="w-full h-full flex items-center justify-center"
-            >
-              <img
-                src={image}
-                alt={`Imagem ${i}`}
-                className="w-full h-auto max-h-[250px] object-cover rounded-lg shadow-md hover:scale-105 cursor-pointer transition-transform duration-300 ease-in-out"
-                onClick={() => handleImgClick(image)}
-              />
+        {config?.imagesArray2.some((s: string) => /\.(mp4|webm|mov)$/i.test(s)) ? (
+          <>
+            {/* Mobile: carousel */}
+            <div className="md:hidden w-full max-w-[520px]">
+              <Swiper
+                modules={[Autoplay, Pagination]}
+                spaceBetween={10}
+                slidesPerView={1}
+                loop={true}
+                pagination={{ clickable: true }}
+              >
+                {config?.imagesArray2.map((src: string, i: number) => (
+                  <SwiperSlide key={i}>
+                    <video
+                      src={src}
+                      autoPlay
+                      muted
+                      loop
+                      playsInline
+                      preload="metadata"
+                      className="w-full h-[500px] object-cover rounded-lg pointer-events-none"
+                    />
+                  </SwiperSlide>
+                ))}
+              </Swiper>
             </div>
-          ))}
-        </div>
+            {/* md to lg: 2x2 grid */}
+            <div className="hidden md:grid lg:hidden grid-cols-2 gap-4 max-w-[1048px] w-full">
+              {config?.imagesArray2.map((src: string, i: number) => (
+                <div key={i} className="w-full flex items-center justify-center">
+                  <video
+                    src={src}
+                    controls
+                    playsInline
+                    preload="metadata"
+                    className="w-full h-[350px] object-cover rounded-lg shadow-md"
+                  />
+                </div>
+              ))}
+            </div>
+            {/* lg+: 4 columns */}
+            <div className="hidden lg:grid grid-cols-4 gap-4 max-w-[1048px] w-full">
+              {config?.imagesArray2.map((src: string, i: number) => (
+                <div key={i} className="w-full flex items-center justify-center">
+                  <video
+                    src={src}
+                    controls
+                    playsInline
+                    preload="metadata"
+                    className="w-full h-[450px] object-cover rounded-lg shadow-md"
+                  />
+                </div>
+              ))}
+            </div>
+          </>
+        ) : (
+          <>
+            {/* Mobile: carousel */}
+            <div className="md:hidden w-full max-w-[520px]">
+              <Swiper
+                modules={[Autoplay, Pagination]}
+                spaceBetween={10}
+                slidesPerView={1}
+                loop={true}
+                autoplay={{ delay: 3000, disableOnInteraction: false }}
+                pagination={{ clickable: true }}
+              >
+                {config?.imagesArray2.map((src: string, i: number) => (
+                  <SwiperSlide key={i}>
+                    <img
+                      src={src}
+                      alt={`Imagem ${i}`}
+                      className="w-full h-[300px] object-cover rounded-lg cursor-pointer"
+                      onClick={() => handleImgClick(src)}
+                    />
+                  </SwiperSlide>
+                ))}
+              </Swiper>
+            </div>
+            {/* Desktop: 2x2 grid */}
+            <div className="hidden md:grid sm:grid-cols-2 sm:grid-rows-2 gap-6 max-w-[1048px] w-full">
+              {config?.imagesArray2.map((src: string, i: number) => (
+                <div key={i} className="w-full h-full flex items-center justify-center">
+                  <img
+                    src={src}
+                    alt={`Imagem ${i}`}
+                    className="w-full h-auto max-h-[250px] object-cover rounded-lg shadow-md hover:scale-105 cursor-pointer transition-transform duration-300 ease-in-out"
+                    onClick={() => handleImgClick(src)}
+                  />
+                </div>
+              ))}
+            </div>
+          </>
+        )}
       </section>
 
       {/* INVESTIMENTO */}
@@ -387,7 +466,7 @@ export default function Home() {
               ou
             </p>
             <a
-              href="https://wa.me/5521999972025"
+              href="https://wa.me/5521982752040"
               target="_blank"
               rel="noopener noreferrer"
               className="w-full rounded-md bg-green-600 px-4 py-2 text-white font-medium hover:bg-green-700 transition cursor-pointer text-center inline-block"
