@@ -6,7 +6,7 @@ export default {
   assets: {
     heroBanner: `${process.env.NEXT_PUBLIC_SUPABASE_URL}/LPs/buzios/buzios.png`,
     vectorBackground: "/vector.png",
-    featuredImage: `${process.env.NEXT_PUBLIC_SUPABASE_URL}/Videos%20lps/cristo.mp4`,
+    featuredImage: `${process.env.NEXT_PUBLIC_SUPABASE_URL}/Videos%20lps/buzios.mp4`,
   },
   imagesArray1: [
     `${process.env.NEXT_PUBLIC_SUPABASE_URL}/LPs/buzios/2026-03-03 at 07.42.35.jpeg`,

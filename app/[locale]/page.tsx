@@ -103,10 +103,7 @@ export default function Home() {
       {/* HERO */}
       <section id="hero">
         <div className="hero-img-wrap">
-          <img
-            src={config?.assets.heroBanner}
-            alt="hero banner"
-          />
+          <img src={config?.assets.heroBanner} alt="hero banner" />
         </div>
         <div className="absolute top-0 left-1/2 -translate-x-1/2 text-center z-20 w-full px-8">
           <h1 className="font-passions-conflict text-white lg:text-9xl md:text-8xl text-7xl my-4">
@@ -131,9 +128,7 @@ export default function Home() {
                 src={image}
                 alt={`Imagem ${i + 1}`}
                 className="w-full max-h-[165px] object-cover rounded-lg cursor-pointer transition-transform duration-300 hover:scale-105"
-                onClick={() =>
-                  handleImgClick(image)
-                }
+                onClick={() => handleImgClick(image)}
               />
             </div>
           ))}
@@ -155,11 +150,7 @@ export default function Home() {
                   src={image}
                   alt={`Imagem ${i + 1}`}
                   className="w-full h-[300px] object-cover rounded-lg cursor-pointer"
-                  onClick={() =>
-                    handleImgClick(
-                      image
-                    )
-                  }
+                  onClick={() => handleImgClick(image)}
                 />
               </SwiperSlide>
             ))}
@@ -247,10 +238,21 @@ export default function Home() {
 
         <div className="max-w-[1048px] w-full bg-white rounded-lg shadow-md grid grid-cols-1 md:grid-cols-2 gap-6">
           <div className="w-full flex justify-center">
-            <iframe
-              src={`${process.env.NEXT_PUBLIC_SUPABASE_URL}/Videos%20lps/solarreal.mp4`}
-              className="w-full h-auto object-cover rounded-lg"
-            />
+            {config?.assets.featuredImage &&
+              (config.assets.featuredImage.match(
+                /\.(jpg|jpeg|png|gif|webp)$/i
+              ) ? (
+                <img
+                  src={config.assets.featuredImage}
+                  alt="Featured"
+                  className="w-full h-auto object-cover rounded-lg"
+                />
+              ) : (
+                <iframe
+                  src={config.assets.featuredImage}
+                  className="w-full h-auto object-cover rounded-lg"
+                />
+              ))}
           </div>
 
           <div className="flex flex-col justify-center p-6">
@@ -284,9 +286,7 @@ export default function Home() {
                 src={image}
                 alt={`Imagem ${i}`}
                 className="w-full h-auto max-h-[250px] object-cover rounded-lg shadow-md hover:scale-105 cursor-pointer transition-transform duration-300 ease-in-out"
-                onClick={() =>
-                  handleImgClick(image)
-                }
+                onClick={() => handleImgClick(image)}
               />
             </div>
           ))}
@@ -387,7 +387,9 @@ export default function Home() {
             >
               {sending ? "Enviando..." : t("form.button")}
             </button>
-            <p className="text-center text-md text-gray-500 leading-relaxed mb-2">ou</p>
+            <p className="text-center text-md text-gray-500 leading-relaxed mb-2">
+              ou
+            </p>
             <a
               href="https://wa.me/5521999972025"
               target="_blank"
