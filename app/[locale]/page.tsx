@@ -13,6 +13,8 @@ import { ConfigContext } from "../context/ConfigContext";
 export default function Home() {
   const t = useTranslations();
 
+  const title = process.env.NEXT_PUBLIC_CONFIG ?? "";
+
   const config = useContext(ConfigContext);
 
   const [modalOpen, setModalOpen] = useState(false);
@@ -59,18 +61,11 @@ export default function Home() {
     setStatusMsg(null);
 
     try {
-      const SERVICE_ID =
-        process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID || "YOUR_SERVICE_ID";
-      const TEMPLATE_ID =
-        process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID || "YOUR_TEMPLATE_ID";
-      const PUBLIC_KEY =
-        process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY || "YOUR_PUBLIC_KEY";
-
       const result = await emailjs.sendForm(
-        SERVICE_ID,
-        TEMPLATE_ID,
+        "service_18tg3sf",
+        "template_i05z0an",
         formRef.current,
-        PUBLIC_KEY
+        process.env.NEXT_PUBLIC_EMAILJS_KEY
       );
       console.log("EmailJS result", result);
       setStatusMsg(t("form.status.success"));
@@ -331,6 +326,7 @@ export default function Home() {
             onSubmit={handleSubmit}
             className="flex flex-col gap-3"
           >
+            <input type="hidden" name="title" value={title} />
             <input
               name="user_name"
               value={name}
