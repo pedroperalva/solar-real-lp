@@ -12,7 +12,6 @@ export default {
     `${process.env.NEXT_PUBLIC_SUPABASE_URL}/LPs/Xian%20Rio/rev-xian01.jpg`,
     `${process.env.NEXT_PUBLIC_SUPABASE_URL}/LPs/Xian%20Rio/rev-xian03.jpg`,
     `${process.env.NEXT_PUBLIC_SUPABASE_URL}/LPs/Xian%20Rio/rev-xian04.jpg`,
-    "https://lifecampogrande.com.br/testes/wp-content/uploads/2025/08/PHOTO-2025-08-21-21-19-58.jpg",
     `${process.env.NEXT_PUBLIC_SUPABASE_URL}/LPs/Xian%20Rio/rev-xian05.jpg`,
   ],
   imagesArray2: [
