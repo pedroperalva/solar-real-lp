@@ -9,10 +9,10 @@ export default {
     featuredImage: `${process.env.NEXT_PUBLIC_SUPABASE_URL}/Videos%20lps/xian.mp4`,
   },
   imagesArray1: [
-    `${process.env.NEXT_PUBLIC_SUPABASE_URL}/LPs/Xian%20Rio/rev-xian01.jpg`,
-    `${process.env.NEXT_PUBLIC_SUPABASE_URL}/LPs/Xian%20Rio/rev-xian03.jpg`,
-    `${process.env.NEXT_PUBLIC_SUPABASE_URL}/LPs/Xian%20Rio/rev-xian04.jpg`,
-    `${process.env.NEXT_PUBLIC_SUPABASE_URL}/LPs/Xian%20Rio/rev-xian05.jpg`,
+    // `${process.env.NEXT_PUBLIC_SUPABASE_URL}/LPs/Xian%20Rio/rev-xian01.jpg`,
+    // `${process.env.NEXT_PUBLIC_SUPABASE_URL}/LPs/Xian%20Rio/rev-xian03.jpg`,
+    // `${process.env.NEXT_PUBLIC_SUPABASE_URL}/LPs/Xian%20Rio/rev-xian04.jpg`,
+    // `${process.env.NEXT_PUBLIC_SUPABASE_URL}/LPs/Xian%20Rio/rev-xian05.jpg`,
   ],
   imagesArray2: [
     `${process.env.NEXT_PUBLIC_SUPABASE_URL}/Videos%20lps/Xian2.mp4`,

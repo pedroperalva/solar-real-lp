@@ -6,7 +6,7 @@ export default {
   assets: {
     heroBanner: `${process.env.NEXT_PUBLIC_SUPABASE_URL}/LPs/COPA%20PALACE/noiva.jpg`,
     vectorBackground: "/vector.png",
-    featuredImage: `${process.env.NEXT_PUBLIC_SUPABASE_URL}}/Videos%20lps/copa.mp4`,
+    featuredImage: `${process.env.NEXT_PUBLIC_SUPABASE_URL}/Videos%20lps/copa.mp4`,
   },
   imagesArray1: [
     `${process.env.NEXT_PUBLIC_SUPABASE_URL}/LPs/COPA%20PALACE/_hl_5087.jpg`,
