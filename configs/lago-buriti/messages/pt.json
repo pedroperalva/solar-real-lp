@@ -1,5 +1,5 @@
 {
- "hero": {
+  "hero": {
     "title": "Lago Buriti",
     "subtitle": " Uma natureza exuberante, refletida nas águas calmas de um lago dourado pelo pôr do sol."
   },
@@ -14,8 +14,8 @@
       "title": "O Cenário Perfeito",
       "place": "Lago Buriti",
       "paragraph1": "Imagine celebrar o amor cercado por uma natureza exuberante, refletida nas águas calmas de um lago dourado pelo pôr do sol. O Lago Buriti é o cenário ideal para quem sonha com um casamento encantador, ao ar livre, onde cada detalhe se harmoniza com a beleza do ambiente.",
-      "paragraph2": "Com seu paisagismo deslumbrante, arquitetura integrada à natureza e estrutura impecável, o espaço oferece o equilíbrio perfeito entre elegância e serenidade. A cada instante, o cenário se transforma em uma pintura viva — o momento perfeito para dizer “sim”.",
-      "paragraph3": "Com o suporte do escritório Leco Biagioni, cada elemento ganha propósito: do altar à decoração, tudo é planejado para criar uma experiência única, romântica e inesquecível.",
+      "paragraph2": "Com seu paisagismo deslumbrante, arquitetura integrada a natureza e estrutura impecável, o espaço oferece o equilíbrio perfeito entre elegância e serenidade. A cada instante, o cenário se transforma em uma pintura viva — o momento perfeito para dizer “sim”.",
+      "paragraph3": "Com o suporte do escritório Leco Biagioni, cada elemento ganha propósito: do altar a decoração, tudo é planejado para criar uma experiência única, romântica e inesquecível.",
       "paragraph4": "Viva o seu grande dia em um dos lugares mais encantadores do Rio de Janeiro e eternize sua história com o brilho do sol se pondo sobre o Lago Buriti."
     }
   },
@@ -51,8 +51,8 @@
     }
   },
   "investment": {
-   "title": "Investimento:",
-    "price": "À partir de R$ 200.000,00*",
+    "title": "Investimento:",
+    "price": "A partir de R$ 200.000,00*",
     "note": "*Este valor é baseado em 100 convidados e pode sofrer alteração para mais ou para menos dependendo da personalização que será feita para cada casal."
   },
   "form": {
