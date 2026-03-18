@@ -65,7 +65,7 @@ export default function Home() {
         "service_18tg3sf",
         "template_i05z0an",
         formRef.current,
-        process.env.NEXT_PUBLIC_EMAILJS_KEY
+        process.env.NEXT_PUBLIC_EMAILJS_KEY,
       );
       console.log("EmailJS result", result);
       setStatusMsg(t("form.status.success"));
@@ -235,7 +235,7 @@ export default function Home() {
           <div className="w-full flex justify-center">
             {config?.assets.featuredImage &&
               (config.assets.featuredImage.match(
-                /\.(jpg|jpeg|png|gif|webp)$/i
+                /\.(jpg|jpeg|png|gif|webp)$/i,
               ) ? (
                 <img
                   src={config.assets.featuredImage}
@@ -271,7 +271,9 @@ export default function Home() {
         className="w-full bg-no-repeat bg-center bg-cover mt-12 px-8 py-8 md:py-0 min-h-0 md:min-h-[675px] flex flex-col justify-center items-center"
         style={{ backgroundImage: 'url("/vector.png")' }}
       >
-        {config?.imagesArray2.some((s: string) => /\.(mp4|webm|mov)$/i.test(s)) ? (
+        {config?.imagesArray2.some((s: string) =>
+          /\.(mp4|webm|mov)$/i.test(s),
+        ) ? (
           <>
             {/* Mobile: carousel */}
             <div className="md:hidden w-full max-w-[520px]">
@@ -300,7 +302,10 @@ export default function Home() {
             {/* md to lg: 2x2 grid */}
             <div className="hidden md:grid lg:hidden grid-cols-2 gap-4 max-w-[1048px] w-full">
               {config?.imagesArray2.map((src: string, i: number) => (
-                <div key={i} className="w-full flex items-center justify-center">
+                <div
+                  key={i}
+                  className="w-full flex items-center justify-center"
+                >
                   <video
                     src={src}
                     controls
@@ -314,7 +319,10 @@ export default function Home() {
             {/* lg+: 4 columns */}
             <div className="hidden lg:grid grid-cols-4 gap-4 max-w-[1048px] w-full">
               {config?.imagesArray2.map((src: string, i: number) => (
-                <div key={i} className="w-full flex items-center justify-center">
+                <div
+                  key={i}
+                  className="w-full flex items-center justify-center"
+                >
                   <video
                     src={src}
                     controls
@@ -353,7 +361,10 @@ export default function Home() {
             {/* Desktop: 2x2 grid */}
             <div className="hidden md:grid sm:grid-cols-2 sm:grid-rows-2 gap-6 max-w-[1048px] w-full">
               {config?.imagesArray2.map((src: string, i: number) => (
-                <div key={i} className="w-full h-full flex items-center justify-center">
+                <div
+                  key={i}
+                  className="w-full h-full flex items-center justify-center"
+                >
                   <img
                     src={src}
                     alt={`Imagem ${i}`}
@@ -407,7 +418,7 @@ export default function Home() {
           >
             <input type="hidden" name="title" value={title} />
             <input
-              name="user_name"
+              name="name"
               value={name}
               onChange={(e) => setName(e.target.value)}
               type="text"
@@ -415,7 +426,7 @@ export default function Home() {
               className="w-full rounded-md border border-gray-300 px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-[#2d3923]"
             />
             <input
-              name="user_email"
+              name="email"
               value={email}
               onChange={(e) => setEmail(e.target.value)}
               type="email"
@@ -423,7 +434,7 @@ export default function Home() {
               className="w-full rounded-md border border-gray-300 px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-[#2d3923]"
             />
             <input
-              name="user_phone"
+              name="phone"
               value={phone}
               onChange={(e) => setPhone(e.target.value)}
               type="tel"
@@ -431,7 +442,7 @@ export default function Home() {
               className="w-full rounded-md border border-gray-300 px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-[#2d3923]"
             />
             <select
-              name="event_type"
+              name="eventType"
               value={eventType}
               onChange={(e) => setEventType(e.target.value)}
               className="w-full rounded-md border border-gray-300 px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-[#2d3923]"
